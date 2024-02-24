@@ -1,30 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel= "stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festival of Urgent Reinventions</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ffffff 0%, rgb(78, 244, 52) 100%);
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      margin: 0 10px;
+    }
+
+    .header {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .schedule {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .schedule li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .schedule li:not(.break)::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      border-bottom: 1px solid #000;
+    }
+
+    .speaker {
+      font-weight: bold;
+    }
+
+    .break {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #000;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="#">The Lineup</a>
-            <a href="#">About</a>
-            <a href="#">Brief</a>
-            <a href="#">Schedule</a>
-            <a href="#">Winners</a>
-          
-        </ul>
-    </nav>
-
-    <h1 style="position: absolute;">
-        THE FESTIVAL OF URGENT REINVENTIONS
-    </h1>
-
-    
-    <footer>
-
-    </footer>
+  <nav>
+    <a href="#">The lineup</a>
+    <a href="#">About</a>
+    <a href="#">Briefs</a>
+    <a href="#">Schedule</a>
+    <a href="#">Winners</a>
+  </nav>
+  <header class="header">
+    <h1>THE FESTIVAL OF URGENT REINVENTIONS</h1>
+    <p>Feb 3-4, 2022</p>
+    <a href="#">Watch Event</a>
+  </header>
+  <main class="main">
+    <section>
+      <h2 class="title">Welcome</h2>
+    </section>
+    <section>
+      <ul class="schedule">
+        <li>BRIEF 1: Counter Health Misinformation</li>
+        <li>Bady Kind Yoga</li>
+        <li>Unconventional Maker Economy</li>
+        <li class="break">Break</li>
+        <li>The Future of Work and AI</li>
+        <li>Frankle Simone</li>
+        <li>BRIEF 2: Remedy The Digital Divide</li>
+        <li>Sound Bath</li>
+        <li>Mistakes Were Made</li>
+        <li>Send Off</li>
+        <li>Open Work Session</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>rethink | stright</p>
+  </footer>
 </body>
 </html>
